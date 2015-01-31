@@ -1,0 +1,12 @@
+<dataConfig>
+
+<dataSource type="JdbcDataSource" driver="org.postgresql.Driver" url="jdbc:postgresql://localhost:5432/solr-db" user="postgres" password="postgres" batchSize="1" />
+<document name="emp">
+<entity name="emp_details" query="SELECT * FROM emp_details">
+<field column="id" name="id" />
+<field column="name" name="name" />
+<field column="address" name="address" />
+<field column="details" name="details" />
+</entity>
+</document>
+</dataConfig>
